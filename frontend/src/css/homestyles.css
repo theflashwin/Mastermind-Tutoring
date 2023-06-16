@@ -1,0 +1,125 @@
+.home {
+
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+
+}
+
+.iconx {
+    transform: translateY(10%);
+    padding-right: -10px;
+}
+
+.padder {
+    font-size: 4vw;
+}
+
+.title {
+
+    height: 100%;
+    width: 50%;
+    
+}
+
+.dynamic-text {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 8vw;
+}
+
+.splash-img {
+    width: 30vw;
+    height: auto;
+}
+
+.btn {
+    padding-top: 1rem;
+    position: relative;
+    padding: 20px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #cb25fd;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 1s all ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn::before {
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 400px;
+    background-color: #000000;
+    top: -370px;
+    left: -120px;
+    border-radius: 45%;
+    transition: 2s all ease-in-out;
+    animation: wave 5s infinite linear;
+}
+
+.btn::after {
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 400px;
+    background-color: #00000080;
+    top: -360px;
+    left: -125px;
+    border-radius: 45%;
+    transition: 2s all ease-in-out;
+    animation: wave 5s infinite linear;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover::before {
+    top: -450px;
+}
+
+.btn:hover::after {
+    top: -440px;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.about {
+    width: 100vw;
+    height: 50vh;
+    background-color: #222;
+    display: flex;
+}
+
+.about h1 {
+    color: white;
+    margin: 20px;
+}
