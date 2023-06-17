@@ -14,7 +14,7 @@ function MyNavbar() {
         return (
             <>
         <nav className='NavbarItems'>
-            <h1 className='logo'><a href='/'>Mastermind Tutorting<FaFlushed className='icon'/></a></h1>
+            <h1 className='logo font-serif text-xl'><a href='/'>Mastermind Tutorting<FaFlushed className='icon'/></a></h1>
             <div className='menu-icons' onClick={handleClick}>
                 {clicked ? <FaTimes/> : <FaBars/>}
             </div>

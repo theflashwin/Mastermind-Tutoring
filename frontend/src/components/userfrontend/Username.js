@@ -1,7 +1,6 @@
 import React from "react";
 import {Toaster} from "react-hot-toast"
 import {useFormik} from "formik"
-import "../userfrontend/applytailwind.css"
 import { usernameValidate, validateLogin } from "../../helper/validate";
 
 const onFinish = (values) => {
@@ -31,7 +30,7 @@ function Username() {
 
         <Toaster position="top-center" reverseOrder={false}></Toaster>
 
-        <form action="/login" method="post" onSubmit={formik.handleSubmit}>
+        {/* <form action="/login" method="post" onSubmit={formik.handleSubmit}>
             <h1>Login</h1>
             <div class="form-group">
                 <label>Username: </label>
@@ -43,7 +42,19 @@ function Username() {
 
             <p><a href="/register">Register Now</a></p>
 
-        </form>
+        </form> */}
+
+        <div className="container mx-auto">
+
+            <div className="flex justify-center items-center h-screen">
+                <div>
+                    <div className="title">
+                        <h4 className="text-xl">Hello Again!</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         </div>
     )

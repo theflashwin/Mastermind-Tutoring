@@ -10,7 +10,7 @@ import Reset from './components/userfrontend/Reset';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-geologica">
     <Navbar/>
       <BrowserRouter>
       <Routes>
@@ -24,7 +24,7 @@ function App() {
       </Routes>
       </BrowserRouter>
     </div>
-  );
+  );  
 }
 
 export default App;
